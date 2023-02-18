@@ -49,3 +49,19 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
 // ----------------------
 // Parallelogram card
 
+document.getElementById('btn-parallelogram').addEventListener('click', function(){
+    const parallelogramElement = document.getElementById('parallelogram').innerText;
+    const parallelogramInputfild1 =document.getElementById('parallelogram-input-b');
+    const newParallelogramInfutfild1 = parallelogramInputfild1.value;
+    const parallelogramInputfild2 =document.getElementById('parallelogram-input-h');
+    const newParallelogramInfutfild2 =parallelogramInputfild2.value;
+    const parallelogramTotle = newParallelogramInfutfild1 * newParallelogramInfutfild2;
+    parallelogramInputfild1.value = '';
+    parallelogramInputfild2.value = '';
+
+    displayData(parallelogramElement, parallelogramTotle);
+});
+
+//------------
+// Rhombus 
+
