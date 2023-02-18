@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <!-- daisy ui + tailwind link  -->
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header section  -->
+    <header>
+        <div class="navbar   px-[50px] shadow-2xl">
+            <div class="navbar-start">
+             <h1 class="text-3xl font-semibold">Interactive <br> <span class="text-lg  font-thin"> Geometry Genius</span></h1>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">blog</a>
+            </div>
+          </div>
+    </header>
+    <!-- main section  -->
+    <main>
+        <section class="lg:px-12 mt-5 flex flex-col md:flex-row lg:flex-row">
+            <div class="w-[75%] grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- card-1  -->
+                <div class="card w-full shadow-xl bg-base-300">
+                    <figure class="px-10 pt-10">
+                      <img class="w-full h-20" src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 id="Triangle" class="card-title">Triangle</h2>
+                      <p>Area (A) = 0.5*b*h</p>
+                      <div class="py-5">
+                        <input class="w-20 rounded" type="number" name="" id="Triangle-input-b" placeholder="   b"> cm
+                        <input class="w-20 rounded" type="number" name="" id="Triangle-input-h" placeholder="   h"> cm
+                      </div>
+                      <div class="card-actions">
+                        <button id="btn-Triangle" class="btn btn-primary px-24">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card- 2 -->
+                <div class="card w-full   shadow-xl bg-base-300">
+                    <figure class="px-10 pt-10">
+                      <img class="w-full h-20" src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) = w*I</p>
+                      <div class="py-5">
+                        <input class="w-20 rounded" type="number" name="" id="" placeholder="   w"> cm
+                        <input class="w-20 rounded" type="number" name="" id="" placeholder="   i"> cm
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-primary px-24">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-3  -->
+                <div class="card w-full shadow-xl bg-base-300">
+                    <figure class="px-10 pt-10">
+                      <img class="w-full h-20" src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>Area (A) = b*h</p>
+                      <p>b=10cm, h=12cm</p>
+                      <div class="py-5">
+                        <input class="w-20 rounded" type="number" name="" id="" placeholder="   b"> cm
+                        <input class="w-20 rounded" type="number" name="" id="" placeholder="   h"> cm
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-primary px-24">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-4  -->
+                <div class="card w-full shadow-xl bg-base-300">
+                    <figure class="px-10 pt-10">
+                      <img class="w-full h-20" src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rhombus</h2>
+                      <p>Area (A) = 0.5*d*d</p>
+                      <p>d = 16cm d = 8cm</p>
+                      <div class="py-5">
+                        <input class="w-20 rounded" type="number" name="" id="" placeholder="   d"> cm
+                        <input class="w-20 rounded" type="number" name="" id="" placeholder="   d"> cm
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-primary px-24">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-5  -->
+                <div class="card w-full shadow-xl bg-base-300">
+                    <figure class="px-10 pt-10">
+                      <img class="w-full h-20" src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Pentagon</h2>
+                      <p>Area (A) = 0.5*p*b</p>
+                      <p>p = 6cm b = 10cm</p>
+                      <div class="py-5">
+                        <input class="w-20 rounded" type="number" name="" id="" placeholder="   p"> cm
+                        <input class="w-20 rounded" type="number" name="" id="" placeholder="   b"> cm
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-primary px-24">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-6  -->
+                <div class="card w-full shadow-xl bg-base-300">
+                    <figure class="px-10 pt-10">
+                      <img class="w-full h-20" src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">ellipse</h2>
+                      <p>Area (A) = ab</p>
+                      <p>a = 10cm, b = 4cm</p>
+                      <div class="py-5">
+                        <input class="w-20 rounded" type="number" name="" id="" placeholder="   a"> cm
+                        <input class="w-20 rounded" type="number" name="" id="" placeholder="   b"> cm
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn btn-primary px-24">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="w-full md:w-[30%] lg:w-[30%] mx-auto  ">
+              <h1 class="text-3xl font-semibold text-center underline">Area Calculation</h1>
+
+              <div class="overflow-x-auto">
+                <table id="table-container" class="table w-full">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- js file link  -->
+    <script src="js/index.js"></script>
+</body>
+</html>
