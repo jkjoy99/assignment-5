@@ -14,6 +14,11 @@ function displayData (name, totle) {
    
 }
 
+// heder section 
+
+document.getElementById('btn-blog').addEventListener('click',function(){
+  window.location.href = "question.html"
+})
 
 //----------------
 //  triangle card
